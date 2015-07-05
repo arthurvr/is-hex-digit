@@ -1,0 +1,33 @@
+{
+  "name": "is-hex-digit",
+  "version": "0.0.0",
+  "description": "Check if something is a hexidecimal digit",
+  "license": "MIT",
+  "repository": "arthurvr/is-hex-digit",
+  "author": {
+    "name": "Arthur Verschaeve",
+    "email": "contact@arthurverschaeve.be",
+    "url": "arthurverschaeve.be"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "hexidecimal",
+    "hex",
+    "base",
+    "16",
+    "digit",
+    "number",
+    "string"
+  ],
+  "devDependencies": {
+    "ava": "^0.0.4"
+  }
+}
