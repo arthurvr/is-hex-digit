@@ -1,5 +1,4 @@
 'use strict';
-
 var digits = [
 	'0',
 	'1',
@@ -19,10 +18,10 @@ var digits = [
 	'f'
 ];
 
-module.exports = function (str) {
-	if (typeof str !== 'number' && typeof str !== 'string') {
+module.exports = function (digit) {
+	if (typeof digit !== 'number' && typeof digit !== 'string') {
 		throw new TypeError('Expected a number or a string');
 	}
 
-	return digits.indexOf(String(str).toLowerCase()) !== -1;
+	return digits.indexOf(String(digit).toLowerCase()) !== -1;
 };

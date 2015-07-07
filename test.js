@@ -47,7 +47,5 @@ test(function (t) {
 	try {
 		isHexDigit({});
 		t.assert(false);
-	} catch (error) {
-		t.assert(true);
-	}
+	} catch (error) {}
 });
