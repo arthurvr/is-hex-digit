@@ -36,16 +36,17 @@ test(function (t) {
 		'E',
 		'F'
 	].forEach(function (digit) {
-		t.assert(isHexDigit(digit));
+		t.true(isHexDigit(digit));
 	});
 
-	t.assert(!isHexDigit('Q'));
-	t.assert(!isHexDigit('unicorn'));
-	t.assert(!isHexDigit('fA'));
-	t.assert(!isHexDigit('aa'));
+	t.false(isHexDigit('Q'));
+	t.false(isHexDigit('unicorn'));
+	t.false(isHexDigit('fA'));
+	t.false(isHexDigit('aa'));
 
-	try {
+	t.throws(function () {
 		isHexDigit({});
-		t.assert(false);
-	} catch (error) {}
+	});
+
+	t.end();
 });
