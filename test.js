@@ -1,8 +1,7 @@
-'use strict';
-var test = require('ava');
-var isHexDigit = require('./');
+import test from 'ava';
+import isHexDigit from './';
 
-test(function (t) {
+test(t => {
 	[
 		'0',
 		'1',
@@ -35,7 +34,7 @@ test(function (t) {
 		'D',
 		'E',
 		'F'
-	].forEach(function (digit) {
+	].forEach(digit => {
 		t.true(isHexDigit(digit));
 	});
 
@@ -44,7 +43,7 @@ test(function (t) {
 	t.false(isHexDigit('fA'));
 	t.false(isHexDigit('aa'));
 
-	t.throws(function () {
+	t.throws(() => {
 		isHexDigit({});
 	});
 
