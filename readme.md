@@ -13,7 +13,7 @@ $ npm install --save is-hex-digit
 ## Usage
 
 ```js
-var isHexDigit = require('is-hex-digit');
+const isHexDigit = require('is-hex-digit');
 
 isHexDigit('f');
 //=> true
